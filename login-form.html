@@ -1,0 +1,69 @@
+ <html>
+<head>   
+        <title>PAW HOME</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width =device-width , initial-scale=1">
+         <link rel="icon" href="logo.png" type="image/icon" />
+        <script src="https://kit.fontawesome.com/56905bf518.js" crossorigin="anonymous"></script>
+       
+</head>
+<body>
+<div class="full">
+        <div class="navigation-bar">
+            <nav>
+                <img src="logo.png"class="logo">
+                <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               <li><button class='loginbtn'onclick="document.getElementById('login
+                   -form').style.display='none"style="width:auto;">Login</button></li>
+                
+            </ul>
+        </nav>
+    </div>
+            <div id="login-form">
+            <div id='login-form' class="login-page">
+                <div class="form-box">
+                <div class="form">
+                    <form class="login-form">
+                    <center><h1 class="main-heading">Login Form</h1></center>
+                        <input type="text"placeholder="Email"/>
+                        <input type="password"placeholder="Password"/>
+                        <button>LOGIN</button>
+                        <p class="asking">Don't have an account yet?<a href="#">Signup</a></p>
+                    </form>
+                    <form class="signup-form">
+                    <center><h1 class="main-heading">Signup Form</h1></center>
+                        <input type="text"placeholder="First Name"/>
+                         <input type="text"placeholder="Last Name"/>
+                         <input type="text"placeholder="Email"/>
+                        <input type="password"placeholder="Password"/>
+                        <button>SIGNUP</button>
+                        <p class="asking">Already have an account?<a href="#">Login</a></p>
+                    </form>
+                    </div>
+                </div>
+            
+            </div>
+    </div>
+    </div>
+     <script>
+    var modal = document.getElementById("login-form");
+    window.onclick = function(event)
+    {
+        if (event.target == modal)
+            (
+            modal.style.display = "none";
+            )
+    }
+    </script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+    $('.asking a').click(function()
+    {$('form').animate({height:"toggle",opacity:"toggle"},"slow");});
+    </script>
+     </body>
+</html>
